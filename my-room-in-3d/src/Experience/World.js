@@ -8,6 +8,7 @@ import TopChair from './TopChair.js'
 import ElgatoLight from './ElgatoLight.js'
 import BouncingLogo from './BouncingLogo.js'
 import Screen from './Screen.js'
+import ResumeFrame from './ResumeFrame.js'
 
 export default class World
 {
@@ -30,6 +31,7 @@ export default class World
                 this.setElgatoLight()
                 this.setBouncingLogo()
                 this.setScreens()
+                this.setResumeFrame()
             }
         })
     }
@@ -67,6 +69,11 @@ export default class World
     setBouncingLogo()
     {
         this.bouncingLogo = new BouncingLogo()
+    }
+
+    setResumeFrame()
+    {
+        this.resumeFrame = new ResumeFrame()
     }
 
     setScreens()
